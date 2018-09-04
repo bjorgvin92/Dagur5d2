@@ -3,10 +3,10 @@ n = int(input("Enter the length of the sequence: ")) # Do not change this line
 fyrsta = 1
 midja = 2
 seinasta = 3
-for i in range(1,n+1):
-    if i < 4:
+for i in range(1,n+1): #lykkjan fer i gang eins oft og slegið er inn í byrjun, byrjar frá 1.
+    if i < 4: #Ef i er minni en 4 þá fer for lykkjan i það að prenta út i
         print(i)
-    else:
+    else: #Ef ekki þá fer það í formúluna + bumpar út fremstu töluna og setur nýju "3 síðustu" í færibreytur til þess að hefja reikninginn uppá nýtt.
         prenta = fyrsta + midja + seinasta
         fyrsta = midja
         midja = seinasta
